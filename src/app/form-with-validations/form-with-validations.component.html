@@ -1,0 +1,15 @@
+<p>
+  form-with-validations works!
+</p>
+<div>
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)" [class.error]="!myForm.valid && myForm.touched">
+    <div [class.error]="!sku.valid && sku.touched">
+      <label for="SKUInput">SKU</label>
+      <input type="text" id="skuinput" placeholder="sku" [formControl]="sku">
+      <div *ngIf="!sku.valid">SKU is Invalid</div>
+      <div *ngIf="sku.hasError('required')">SKU is required</div>
+    
+      <div *ngIf="!myForm.valid">Form is Invalid</div></div>
+    <button type="submit">SUBMIT</button>
+  </form>
+</div>

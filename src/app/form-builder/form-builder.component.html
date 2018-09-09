@@ -1,0 +1,16 @@
+<p>
+  form-builder works!
+</p>
+
+<div id="div1" style="text-align: center">
+    <h2>FORM DEMO</h2>
+    <!-- <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)" class="form"> -->
+        <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)" class="form">
+      <div>
+        <label for="SKUInput">SKU</label><br>
+        <input type="text" id="skuInput" placeholder="SKU"  [formControl]="myForm.controls['sku']">
+      </div>
+      <button type="submit" class="button">Submit</button>
+    </form>
+  </div>
+  

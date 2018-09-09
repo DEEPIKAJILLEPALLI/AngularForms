@@ -1,0 +1,19 @@
+input[type=text] {
+    
+   
+    background-color:floralwhite;
+    color: white;
+}
+
+#div1{
+    border: 2px solid dimgray;
+    background:honeydew;
+    text-align: center;
+
+}
+button{
+    background-color:lightgrey;
+    color: lightcoral;
+   
+}
+

@@ -1,0 +1,15 @@
+<p>
+  demo-form-sku works!
+</p>
+
+
+<div id="div1" style="text-align: center">
+  <h2>FORM DEMO</h2>
+  <form #f="ngForm"  (ngSubmit)="onSubmit(f.value)" class="form">
+    <div>
+      <label for="SKUInput">SKU</label><br>
+      <input type="text" id="skuInput" placeholder="SKU" name="sku" ngModel>
+    </div>
+    <button type="submit" class="button">Submit</button>
+  </form>
+</div>
